@@ -11,7 +11,6 @@ def add_task():
         the_cursor.execute('insert into tasks values (?)', (task_string ,))    
         list_update()    
         task_field.delete(0, 'end')  
-    
 def list_update():    
     clear_list()    
     for task in tasks:    
